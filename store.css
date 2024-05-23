@@ -1,0 +1,304 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  margin-bottom: 2em;
+  font-style: Arial;
+  background: rgb(144, 183, 196);
+}
+
+p {
+  color: rgb(0, 0, 0);
+}
+
+body {
+  background-color:rgb(4, 69, 91);
+}
+
+.active {
+  color: blue;
+  font-weight: bold;
+}
+
+.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 20px;
+  overflow: hidden;
+  background-color:rgb(32, 135, 169) ;
+  display: flex;
+  justify-content: center;
+}
+
+.topnav a {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  margin: 0 10px;
+}
+@media only screen and (max-width: 768px) {
+  .topnav {
+      flex-direction: column;
+  }
+
+  .topnav a {
+      margin: 5px 0;
+  }
+}
+
+
+p{
+  margin-inline-start: 5%;
+  margin-inline-end: 5%;
+}
+.image {
+  width: 100%;
+  height: 50%;
+}
+
+.overlay {
+  font-style: initial;
+  font-size: large;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.ul{
+  color: rgb(23, 23, 23);
+  margin-inline-start: 10%;
+}
+
+
+.section1 {
+  color: rgb(255, 255, 255);
+  width: 100%;
+  height: 10%;
+  text-align: center;
+  overflow: auto;
+  text-overflow: ellipsis;
+  text-shadow: 2px;
+}
+
+.footer {
+  background-color: rgb(32, 135, 169);
+  color: white; 
+  text-align: left;
+  padding: 20px; 
+}
+
+.citymarket-gothatuwa {
+  font-size: x-large;
+  display: flex;
+  flex-direction: column;
+}
+
+.top-row {
+  display: flex;
+}
+
+iframe {
+  width: 50%;
+  height: 300px; 
+}
+
+.bottom-row {
+  display: flex;
+}
+.bottom-row p {
+  flex: 1; 
+  margin: 2%;
+  font-size: large;
+}
+.citymarket-Borella {
+  font-size: x-large;
+  display: flex;
+  flex-direction: column;
+}
+
+.topics{
+  font-size: xx-large;
+  text-align: center;
+  color: var(--main_topic_color);
+}
+.table {
+  background-color: rgb(249, 249, 249);
+  margin-inline-start: 5%;
+  margin-inline-end: 5%;
+  border-collapse: collapse; 
+}
+
+th, td {
+  background-color: rgb(254, 254, 255);
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid rgb(8, 8, 8);
+  border-left: 1px solid rgb(8, 8, 8) ;
+  border-right: 1px solid rgb(8, 8, 8);
+  border-top: 1px solid rgb(8, 8, 8);
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+tfoot {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; 
+  margin-inline-start: 20%;
+  margin-inline-end: 20%;
+}
+@media (max-width: 768px) {
+  .flex-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .item {
+      flex: 1 1 80%;
+      margin: 10px 0;
+      width: 50%;
+      height: 50%;
+  }
+}
+
+.item {
+  margin-bottom: 20px; 
+  flex-basis: 30%;
+}
+
+.item img {
+  width: 100%;
+  height: 200px;
+}
+
+.item p {
+  text-align: center;
+  color: rgb(3, 3, 3);
+}
+
+.button{
+  margin: 20%;
+  color: rgb(255, 255, 255);
+  background-color: rgb(3, 3, 3);
+  padding: 10px 20px;
+}
+
+.checkbox{
+  color: white;
+
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px; 
+  margin-inline-start: 20%;
+  margin-inline-end: 20%;
+}
+
+.grid-item {
+  text-align: center;
+}
+
+.grid-item img {
+  width: 100%; 
+  height: 200px; 
+}
+
+.grid-item p {
+  margin-top: 10px; 
+}
+
+
+tr,img{
+  width: 50%;
+  height: 50%;
+}
+th:nth-child(1), td:nth-child(1) {
+  width: 20%;
+}
+th:nth-child(2), td:nth-child(2) {
+  width: 80%;
+}
+
+:root{
+  --main_topic_color:white;
+}
+
+form {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  margin: auto;
+  max-width: 75%;
+}
+
+h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+label {
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+input[type="text"] {
+  width: 75%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.radio, .checkbox {
+  margin-bottom: 10px;
+}
+
+input[type="radio"], input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+button {
+  display: block;
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.flex-container2 {
+  display: flex;
+  justify-content: space-between; 
+  align-items: flex-start; 
+  margin-inline-start: 5%;
+  margin-inline-end: 5%;
+}
+@media (max-width: 768px) {
+  .flex-container2 {
+      flex-direction: column;
+      align-items: center;
+  }
+}
